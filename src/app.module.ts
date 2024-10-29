@@ -11,7 +11,7 @@ import { ConfigModule } from '@nestjs/config';
       envFilePath: '.env',
       isGlobal: true,
     }),
-    MongooseModule.forRoot('mongodb+srv://sutariyavansh:shzWxdeOVLzcdnwf@cluster0.pzu8eij.mongodb.net/gptIntegration', {
+    MongooseModule.forRoot(process.env.DB, {
       connectionFactory: (connection) => {
         connection.once('open', () => {
           Logger.log('Database connected successfully!', 'MongoDB');
