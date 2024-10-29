@@ -1,5 +1,6 @@
 # ChatGPT Integration with NestJS 🚀\
 
+![Architecture Diagram](./img.webp)
 
 This repository demonstrates how to integrate **ChatGPT API** into a **NestJS** application. The project showcases the basic communication flow between the API and a NestJS backend to send prompts and receive AI-generated responses.
 
@@ -37,5 +38,3 @@ Make sure you have the following installed:
 4. Start the NestJS server:
    ````bash
    npm run start:dev
-
- 
